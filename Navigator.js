@@ -11,18 +11,17 @@ const Stack = createStackNavigator();
 
 export const Navigator = () => {
     return (
-        <Stack.Navigator>
+        <Stack.Navigator screenOptions={{
+            headerShown: false,
+        }}>
             <Stack.Screen
                 name="WelcomeScreen"
                 component={Welcome}
-                options={{
-                    headerShown: false,
-                }}
             />
 
             <Stack.Screen
                 name="MemberSignScreen"
-                component={MemberSign}
+                component={MemberSign} 
             />
 
         </Stack.Navigator>
