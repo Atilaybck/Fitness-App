@@ -4,6 +4,7 @@ import { Edit } from "./screens/Edit";
 import { Profile } from "./screens/Profile";
 import Welcome from "./src/pages/Welcome";
 import MemberSign from "./src/pages/MemberSign";
+import MemberResult from "./src/pages/MemberResult";
 
 
 
@@ -21,7 +22,12 @@ export const Navigator = () => {
 
             <Stack.Screen
                 name="MemberSignScreen"
-                component={MemberSign} 
+                component={MemberSign}
+            />
+
+            <Stack.Screen
+                name="MemberResultScreen"
+                component={MemberResult}
             />
 
         </Stack.Navigator>
